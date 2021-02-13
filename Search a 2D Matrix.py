@@ -14,7 +14,6 @@ class Solution:
 #Method2
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        num=[]
         ans=0
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
