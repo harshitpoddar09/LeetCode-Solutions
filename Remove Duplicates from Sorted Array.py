@@ -12,3 +12,11 @@ class Solution:
             while nums.count(i)>1:
                 nums.remove(i)
         return len(nums)
+    
+        #Submission 3 (fastest)
+        a=set(nums)
+        a=sorted(a)
+        nums.clear()
+        for i in a:
+            nums.append(i)
+        return len(nums)
