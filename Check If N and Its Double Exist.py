@@ -1,3 +1,4 @@
+#Submission 1
 class Solution:
     def checkIfExist(self, arr: List[int]) -> bool:
         for i in range(len(arr)):
@@ -7,3 +8,13 @@ class Solution:
                         return 'true'
         else:
             print('false')
+
+#Submission 2 (faster)
+class Solution:
+    def checkIfExist(self, arr: List[int]) -> bool:
+        if 0 in arr:
+            arr.remove(0)
+        for i in arr:
+            if 2*i in arr:
+                return 1
+        return 0
