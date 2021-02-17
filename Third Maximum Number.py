@@ -1,3 +1,13 @@
+#Submission 2 (48ms)
+class Solution:
+    def thirdMax(self, nums: List[int]) -> int:
+        a=set(nums)
+        a=sorted(a)
+        if len(a)>2:
+            return a[len(a)-3]
+        return max(a)
+
+#Submision 1 (1780ms)
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
         count_list={}
